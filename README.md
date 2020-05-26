@@ -71,7 +71,7 @@ Tester le service:
 
     <?xml version="1.0" encoding="UTF-8"?>
     <SOAP-ENV:Envelope 
-        xmlns:ns0="otto.rhino"
+        xmlns:ns0="ottosoap.rhino"
         xmlns:ns2="rhino.views"
         xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -80,10 +80,10 @@ Tester le service:
         <ns0:create_saisie>
         <ns0:saisie>
             <ns2:route>kong</ns2:route>
-            <ns2:application></ns2:application>
-            <ns2:dtstart>2020-05-03T00:00:00</ns2:dtstart>
+            <ns2:application>tom</ns2:application>
+            <ns2:dtstart>2020-05-03T06:00:00</ns2:dtstart>
             <ns2:duree>1</ns2:duree>
-            <ns2:cdret>10</ns2:cdret>
+            <ns2:cdret>5</ns2:cdret>
             <ns2:mois>mai</ns2:mois>
         </ns0:saisie>
         </ns0:create_saisie>

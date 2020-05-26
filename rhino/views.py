@@ -21,21 +21,21 @@ class SaisieService(Service):
     @rpc(Integer, _returns=LaSaisie)
     def get_saisie(ctx, pk):
         try:
-            return Note.objects.get(pk=pk)
-        except Note.DoesNotExist:
+            return Saisie.objects.get(pk=pk)
+        except Saisie.DoesNotExist:
             raise ResourceNotFoundError('LaSaisie')
 
     @rpc(Integer, _returns=Iterable(LaSaisie))
     def get_saisies(ctx, pk):
         try:
-            return Note.objects.all()
-        except Note.DoesNotExist:
+            return Saisie.objects.all()
+        except Saisie.DoesNotExist:
             raise ResourceNotFoundError('LaSaisie')
 
     @rpc(LaSaisie, _returns=LaSaisie)
-    def create_saisie(ctx, note):
+    def create_saisie(ctx, saisie):
         try:
-            return Note.objects.create(**note.as_dict())
+            return Saisie.objects.create(**saisie.as_dict())
         except IntegrityError:
             raise ResourceAlreadyExistsError('LaSaisie')
 
