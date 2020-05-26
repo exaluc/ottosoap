@@ -113,6 +113,8 @@ ENV/
 env.bak/
 venv.bak/
 
+Rhino_saisie
+
 # Spyder project settings
 .spyderproject
 .spyproject
