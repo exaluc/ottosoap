@@ -55,7 +55,7 @@ Tester le service:
 
     <?xml version="1.0" encoding="UTF-8"?>
     <SOAP-ENV:Envelope 
-       xmlns:ns0="otto.rhino"
+       xmlns:ns0="ottosoap.rhino"
        xmlns:ns2="rhino.views"
        xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" 
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
